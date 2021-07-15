@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: GPL-2.0
+config AUTHENTICATION_COPROCESSOR
+	tristate "authentication coprocessor i2c driver"
+	depends on USB && I2C
+	---help---
+    This is the driver for authentication coprocessor chip from Apple
+    to make the devicess valid as apple accessory.it will use i2c to connect
+    to the chip and usb to communicate with the apple smart phone.
+    to compile this driver as a module, choose M here: the module
+    will be called apple-auth-coproc
+
